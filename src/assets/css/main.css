@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    color:#444;
+}
+body{
+    background:whitesmoke;
+}
+ul,ol{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+}

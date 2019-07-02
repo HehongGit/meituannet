@@ -1,0 +1,141 @@
+.nav{
+    float:right;
+    li{
+        float:left;
+        padding:0 15px;
+        position:relative;
+        z-index:9999;
+       
+        color:#aaa;
+        a{
+            color:#aaa;
+            font-weight: 400;
+        }
+        a:hover{
+        color:rgb(8, 216, 216);
+
+        }
+        ol{ 
+            display: none;
+            position: absolute;
+            background:white;
+            right:0;
+            box-shadow:0px 3px 5px 0 rgba(0,0,0,.1);
+            li:first-of-type{
+                height:40px;
+                line-height:40px;
+            }
+            li{
+                height:35px;
+                line-height:35px;
+                width:100%;
+                padding:0;
+                text-align: center ;
+            }
+        }
+
+        .meituanNav{
+            width:1190px;
+            box-sizing: border-box;
+            background:white;
+            position: absolute;
+            right:-1px;
+            box-shadow: 0px 5px 3px 0 rgba(0,0,0,.1);
+            // top:39px;
+            display: none;
+            border:1px solid #ddd;
+            border-top:none;
+            padding:30px;
+
+            dl{
+                margin:0 15px;
+                dt{
+                    text-align: center;
+                    margin-bottom:10px;
+                    font-size:14px;
+                    color:rgb(8, 216, 216)
+                }  
+                dd{
+                    height:25px;
+                    line-height:25px;
+                    float: left;
+                    text-align: center;
+                    a:hover{
+                        color:rgb(8, 216, 216)
+                    }
+                }
+            }
+            dl.travel{
+                width:240px;
+                
+                dd{
+                    width:33%;
+                    float:left;
+                    text-align: center;
+                    a:hover{
+                        color:rgb(8, 216, 216)
+                    }
+                }
+               
+            }
+            dl.food{
+                width:180px;
+               dd{
+                   width:50%;
+                   float: left;
+               }
+            }
+            dl.movie{
+                width:100px;
+                dd{
+                    width:100%;
+                }
+            }
+            dl.application{
+                width:400px;
+                margin-left:60px;
+
+                dd{
+                    width:60px;
+                    height:60px;
+                    border-radius:10px;
+
+                    margin:0 10px;
+                    a{
+                        display: inline-block;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                }
+                
+            }
+
+        }
+    }
+    li:hover{
+        background:white;
+       
+        color:rgb(8,216,216);
+        ol{
+            display: block;
+        }
+
+    }
+    li:first-of-type:hover{
+        ol{
+            top:0;
+        }
+    }
+    li:last-of-type:hover{
+       .meituanNav{
+           display: flex;
+       }
+    }
+    .saler{
+        ol{
+            width:120px;
+        }
+    }
+}
