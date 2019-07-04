@@ -44,7 +44,7 @@
                         <dd><a href="#">快驴进货商家合作</a></dd>
                         <dd><a href="#">美团闪购商家入驻</a></dd>
                     </dl>
-                 
+
                 </li>
                 <li>
                     <dl>
@@ -129,7 +129,7 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style lang="less" scoped>

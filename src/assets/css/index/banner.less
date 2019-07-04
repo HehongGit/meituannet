@@ -1,0 +1,128 @@
+.banner {
+    // border:1px solid red;
+    height:500px;
+    .content{
+        // background:green;
+        .nav{
+            display: flex;
+            // justify-content:
+    
+            li{
+                display: inline-block;
+                height:50px;
+                line-height:50px;
+                margin:0 20px;
+                a{
+                    font-weight:bolder;
+                }
+                a:hover{
+                    color:#f40;
+                }
+            }
+            li:nth-of-type(4),li:first-of-type{
+                a:hover{
+                    color:orange
+                }
+            }
+            li:nth-of-type(5){
+                a:hover{
+                    color:rgb(0,188,198);
+                }
+            }
+        }
+       .con-center{
+           margin:10px 0;
+           height:250px;
+           width:100%;
+           display: flex;
+           .block{
+                flex:8;
+                margin-right:10px;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+           }
+           .banner-center-ad{
+               flex:2;
+               height:100%;
+               background:url("http://p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg");
+               background-size:100% 100%;
+                margin-right:10px;
+           }
+           .banner-right-user{
+               flex:3;
+               height:100%;
+               background:white;
+               img{
+                   width:60px;
+                   height:60px;
+                   border-radius: 50%;
+                   display: block;
+                   margin:20px auto;
+               }
+               p{
+                   text-align: center;
+                   font-weight: 800;
+               }
+               .register,.login{
+                   display: block;
+                   margin: 10px auto;
+                   width:120px;
+               }
+           }
+             
+       }
+       .con-bottom{
+           display: flex;
+           height:180px;
+            .con-bottom-left{
+                flex:8;
+                display: flex;
+                justify-content: space-between;
+                .ad1,.ad2{
+                    width:280px;
+                    margin-right:10px;
+                    height:100%;
+                    background-size:100% 100%;
+                }
+                .ad1{
+                    background-image: url(http://p1.meituan.net/codeman/8cce56c467a17e04f3094d1e455462a0132772.png)
+                }
+                .ad2{
+                    background-image: url(http://p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg);
+                }
+            }
+            .con-bottom-center{
+                flex:2;
+                margin-right:10px;
+                background-size:100% 100%;
+                background-image:url(http://p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg);
+            }
+            .con-bottom-right{
+                flex:3;
+                background:white;
+                img{
+                    width:100px;
+                    height:100px;
+                    display: block;
+                    margin: 10px auto;
+                }
+                p{
+                    font-weight: 900;
+                    text-align: center
+                }
+                span{
+                    font-size:12px;
+                    text-align: center;
+                    line-height:20px;
+                    display: block;
+                    em{
+                        font-style: normal;
+                        color:red;
+                    }
+                }
+            }
+       }
+    }
+}

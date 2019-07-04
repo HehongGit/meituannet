@@ -12,13 +12,12 @@
     @import url("../../assets/css/header/topbar.less");
 </style>
 <script>
-import geo from "./geo"
-import navbar from "./nav"
+import geo from './geo'
+import navbar from './nav'
 export default {
-    components:{
-        geo,
-        navbar
-    }
+  components: {
+    geo,
+    navbar
+  }
 }
 </script>
-

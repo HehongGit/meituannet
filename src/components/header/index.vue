@@ -13,12 +13,12 @@
     @import url("../../assets/css/header/index.less");
 </style>
 <script>
-import topBar from "./topbar";
-import searchBar from "./searchBar";
+import topBar from './topbar'
+import searchBar from './searchBar'
 export default {
-    components:{
-        topBar,
-        searchBar
-    }
+  components: {
+    topBar,
+    searchBar
+  }
 }
 </script>

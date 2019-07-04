@@ -1,0 +1,95 @@
+.youlove {
+    margin-top: 30px;
+    .nav {
+      display: flex;
+      background: linear-gradient(to right, rgb(87, 203, 175), rgb(72, 180, 203));
+      height: 50px;
+      line-height: 50px;
+      box-sizing: border-box;
+      padding-left: 20px;
+      border-radius: 5px 5px 0 0;
+      font-size: 14px;
+      font-weight: 300;
+      dt {
+        margin-right: 20px;
+        font-size: 20px;
+        color: white;
+        font-family: shanghei;
+      }
+      dd {
+        position: relative;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+  
+      dd i {
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 7px solid transparent;
+        border-bottom-color: white;
+      }
+    }
+    .list {
+      background-color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      border:1px solid #ddd;
+      border-radius:0 0 10px 10px;
+      justify-content: space-around;
+      li {
+          margin-bottom: 10px;
+        width: 20%;
+        a {
+          display: block;
+          box-sizing: border-box;
+          padding: 5px;
+          border-radius: 5px;
+          img {
+              width: 100%;
+              height: 120px;
+          }
+          p.title{
+              height:30px;
+              line-height:30px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-weight: 500;
+  
+  
+          }
+          p.address{
+              font-size:12px;
+              color:#aaa;
+              line-height:20px;
+              height:20px;
+          }
+          p.price{
+              color:rgb(241, 108, 20);
+              font-size:14px;
+  
+  
+              em{
+                  font-style: normal;
+                  font-size:20px;
+                  color:rgb(241, 108, 20);
+                  font-weight:600;
+                  font-family: "shanghei"
+              }
+          }
+        }
+        a:hover {
+          background: #ddd;
+        }
+        
+      }
+    }
+  }
