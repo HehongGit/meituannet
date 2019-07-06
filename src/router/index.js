@@ -13,12 +13,41 @@ export default new Router({
       path: 'index',
       name: 'index',
       component: () => import('../page/index.vue')
-    }]
+    },
+    {
+      path: 'changeCity',
+      name: 'changeCity',
+      component: () => import('../page/changeCity.vue')
+    },
+    {
+      path: '/category',
+      name: 'category',
+      component: () => import('../page/category.vue')
+    },
+    {
+      path: '/changeCity',
+      name: 'changeCity',
+      component: () => import('../page/changeCity.vue')
+    }
+    ]
   },
   {
-    path: '/login',
-    name: 'login',
-    component: () => import('../layout/blank.vue')
+    path: '/blank',
+    name: 'blank',
+    component: () => import('../layout/blank.vue'),
+    children: [
+      {
+        path: 'login',
+        name: 'login',
+        component: () => import('../page/login.vue')
+      },
+      {
+        path: 'register',
+        name: 'register',
+        component: () => import('../page/register.vue')
+      }
+    ]
   }
+
   ]
 })

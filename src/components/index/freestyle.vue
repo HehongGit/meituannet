@@ -2,9 +2,9 @@
     <div class="freeStyle">
         <dl class="nav">
             <dt >有格调</dt>
-            <dd  v-for="item in navList" :key="item.name" :data-type="item.type" v-if="istyleList[item.type].length"  @mouseenter="changeType" >{{item.name}}<i v-if="item.type==nowtype"></i></dd>
+            <dd  v-for="item in navList" :key="item.name" :data-type="item.type"  @mouseenter="changeType" >{{item.name}}<i v-if="item.type==nowtype"></i></dd>
         </dl>
-        <ul class="list">
+        <ul class="list" >
             <li v-for="item in istyleList[nowtype]" :key="item.address">
                 <a href="#">
                     <img :src="item.image" />
@@ -22,10 +22,10 @@
                 <p class="title">右键蛋糕店（北京路）</p>
                 <p class="description">布朗熊生日蛋糕一个,约8寸，圆形</p>
                 <p class="price-pos">
-                   
+
                         <span class="price">￥<em>118</em><del>门市价￥218</del></span>
                         <span class="pos">北京路商业区 </span>
-                    
+
                 </p>
              </a>
            </li>
@@ -81,9 +81,9 @@ export default {
         changeType(e){
 
             this.nowtype=e.target.dataset.type;
-            
+
         }
-    },
-}   
+    }
+}
 </script>
 

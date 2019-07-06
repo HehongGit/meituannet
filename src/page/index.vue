@@ -43,6 +43,7 @@
     </div>
 </template>
 <script>
+import Axios from "axios"
 import menulist from "../components/index/menu"
 import banner from "../components/index/banner"
 import freeStyle from "../components/index/freestyle"
@@ -61,8 +62,18 @@ export default {
           mingsu,
           youlove,
           meituannav
+       },
+       created(){
+          Axios.get("http://api.duyiedu.com/api/meituan/city/getPosition.json",{
+            params:{
+              appkey:"_crote_1551267686091"
+            }
+          }).then(res=>{
+             this.$store.commit("changeNearCity",res.data.data.nearCity)
+            this.$store.dispatch("changeCity",res.data.data.name);
+          })
        }
-}   
+}
 </script>
 <style lang="less" scoped>
     @import url("../assets/css/page/index.less");

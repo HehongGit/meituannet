@@ -14,10 +14,40 @@
                     </div>
                     <div class="banner-center-ad"></div>
                     <div class="banner-right-user">
+                      <div v-if="!this.$store.state.loginStatus">
                         <img src="https://s0.meituan.net/bs/fe-web-meituan/2d05c2b/img/avatar.jpg" />
                         <p class="username">HI！你好</p>
-                        <el-button class="register" round>注册</el-button>
-                        <el-button round class="login">立即登录</el-button>
+                        <router-link tag="el-button"  to="/blank/register"  class="register" round>注册</router-link>
+                        <router-link tag="el-button" to="/blank/login" round class="login">立即登录</router-link>
+                      </div>
+
+                      <div v-else>
+                          <img src="http://s0.meituan.net/bs/fe-web-meituan/e3064a3/img/head-img.png"/>
+                          <p class="username">{{this.$store.state.userName}}</p>
+                          <ul class="system">
+                              <li>
+                                  <i class="el-icon-document"></i>
+                                  <span>我的订单</span>
+                              </li>
+                              <li>
+                                <i class="el-icon-star-off"></i>
+                                <span>我的收藏</span>
+                              </li>
+                              <li>
+                                <i class="el-icon-tickets"></i>
+                                <span>抵用券</span>
+                              </li>
+                              <li>
+                                <i class="el-icon-goods"></i>
+                                <span>余额</span>
+                              </li>
+                              <li>
+                                <i class="el-icon-more"></i>
+                                <span>更多</span>
+                              </li>
+                          </ul>
+                      </div>
+
                     </div>
                 </div>
 
