@@ -15,16 +15,16 @@
                     <span>更多></span>
                 </p>
                 <div class="itemList">
-                    <a href="#">代金券</a>
-                    <a href="#">饮料甜点</a>
-                    <a href="#">火锅</a>
-                    <a href="#">自助餐</a>
-                    <a href="#">小吃快餐</a>
-                    <a href="#">日韩料理</a>
-                    <a href="#">川湘菜</a>
-                    <a href="#">江浙菜</a>
-                    <a href="#">西北菜</a>
-                    <a href="#">京菜鲁菜</a>
+                    <router-link tag="a" to="/category" href="javascript:;">代金券</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">饮料甜点</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">火锅</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">自助餐</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">小吃快餐</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">日韩料理</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">川湘菜</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">江浙菜</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">西北菜</router-link>
+                    <router-link tag="a" to="/category" href="javascript:;">京菜鲁菜</router-link>
                 </div>
             </div>
 
